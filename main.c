@@ -11,17 +11,24 @@ int main(void)
     printf("inserisci il valore del terzo lato del triangolo: ");
     scanf("%d", &L3);
 
-    if (L1==L2==L3)
+    if (L1==L2)
     {
-      printf("il triangolo e' equilatero");
+        if (L2==L3)
+
+            printf("il triangolo e' equilatero");
+
+        else(printf("il triangolo e' iscoscele"));
     }
-    else if ("L1==L2!=L3 || L3==L1!=L2 || L2==L3!=L1")
-    {
-        printf("il triangolo e' isoscele");
-    }
-    else if ("L1!=L2!=L3")
-    {
-        printf("il triangolo e' scaleno");
-    }
+        else if (L2==L3)
+
+                printf("il triangolo e' iscoscele");
+        else if (L3==L1)
+                printf("il triangolo e' iscoscele");
+
+
+    else (printf("il triangolo e' scaleno"));
+
+
+
     return 0;
 }
